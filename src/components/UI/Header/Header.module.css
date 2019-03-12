@@ -1,0 +1,25 @@
+.logo {
+    position: relative;
+}
+
+.searchRoot {
+    left: 5%;
+    position: relative;
+}
+
+.searchInput {
+    margin-left: 14px;
+}
+
+.searchButton {
+    
+}
+
+.grow {
+    position: relative;
+}
+
+.sectionPageIcons {
+    position: relative;
+    left: 1%;
+}
