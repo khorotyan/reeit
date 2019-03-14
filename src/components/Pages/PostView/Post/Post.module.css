@@ -6,3 +6,25 @@
 .media {
     height: 500px;
 }
+
+.commentInput {
+    width: 100%;
+}
+
+.moreComments {
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.moreComments:active {
+    color: rgba(0, 0, 0, 0.28);
+}
+
+.userMention {
+    color: #003569;
+    text-decoration: none;
+}
+
+.userMention:active {
+    color: #0035698c;
+    text-decoration: none;
+}
