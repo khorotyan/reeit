@@ -12,11 +12,11 @@ const findMention = (label, value) => {
             return [current];
           }
 
-          if (!current.includes('@')) {
-            return prev.concat(current);
+          if (current.includes('@') && current.replace(/@/g, '').length > 2) {
+            return prev.concat(<Mention username={current}/>);
           } 
 
-          return prev.concat(<Mention username={current}/>);
+          return prev.concat(current);
         }, [])
       }
     </span>);
