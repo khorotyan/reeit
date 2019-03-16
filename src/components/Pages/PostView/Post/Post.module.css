@@ -19,12 +19,12 @@
     color: rgba(0, 0, 0, 0.28);
 }
 
-.userMention {
-    color: #003569;
-    text-decoration: none;
+.expandDescription {
+    padding-left: 4px;
+    color: rgba(0, 0, 0, 0.42);
 }
 
-.userMention:active {
-    color: #0035698c;
-    text-decoration: none;
+.expandDescription:active {
+    padding-left: 4px;
+    color: rgba(0, 0, 0, 0.28);
 }
