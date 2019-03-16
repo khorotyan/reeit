@@ -3,7 +3,7 @@ import classes from './Mention.module.css';
 import { Link, BrowserRouter } from 'react-router-dom';
 
 const mention = props => {
-    const username = props.username[0] === '@' ? props.username : '@' + props.username;
+    const username = props.username;//props.username[0] === '@' ? props.username : '@' + props.username;
 
     return (
         <BrowserRouter>
