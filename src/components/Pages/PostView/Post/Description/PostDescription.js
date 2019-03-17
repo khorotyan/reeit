@@ -24,7 +24,7 @@ const postDescription = props => {
         const newlineIndex = shortDescription.indexOf('\n');
 
         if (newlineIndex !== -1) {
-            
+            return shortDescription.substr(0, newlineIndex);
         }
 
         // Trim again if we are in the middle of a word

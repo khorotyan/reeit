@@ -115,7 +115,7 @@ const post = props => {
                 <Typography style={{paddingBottom: 6}} component="p">
                     <PostLike postId="13492" username="hasselblad" likes="16450"/>
                 </Typography>   
-                <Typography style={{paddingBottom: 12}} component="p">
+                <Typography style={{paddingBottom: 12, whiteSpace: 'pre-line'}} component="p">
                     <PostDescription description={props.description}/>
                 </Typography>
                 {comments.map(comment => 
