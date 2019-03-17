@@ -25,13 +25,3 @@
 .moreComments:active {
     color: rgba(0, 0, 0, 0.28);
 }
-
-.expandDescription {
-    padding-left: 4px;
-    color: rgba(0, 0, 0, 0.42);
-}
-
-.expandDescription:active {
-    padding-left: 4px;
-    color: rgba(0, 0, 0, 0.28);
-}

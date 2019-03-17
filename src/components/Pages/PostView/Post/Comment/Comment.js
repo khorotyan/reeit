@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IconButton, Typography } from '@material-ui/core';
 import FavoriteIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteFilledIcon from '@material-ui/icons/Favorite';
-import { findMention } from '../../../../../util/mentionFinder';
+import { findMentions } from '../../../../../util/mentionFinder';
 import Username from '../../../Shared/Username/Username';
 import classes from './Comment.module.css';
 
@@ -21,7 +21,7 @@ const comment = props => {
             <div className={classes.commentTextRoot}>
                 <Typography style={{paddingBottom: 8, whiteSpace: 'pre-line'}} component="p">
                     <Username name="zyuser "/>
-                    {findMention(props.text)}
+                    {findMentions(props.text)}
                 </Typography>
             </div>
             <div className={classes.likeRoot}>

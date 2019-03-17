@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import Comment from './Comment/Comment';
+import PostDescription from './Description/PostDescription';
 import Username from '../../Shared/Username/Username';
 import PostLike from './Like/PostLike';
 import Card from '@material-ui/core/Card';
@@ -115,16 +116,7 @@ const post = props => {
                     <PostLike postId="13492" username="hasselblad" likes="16450"/>
                 </Typography>   
                 <Typography style={{paddingBottom: 12}} component="p">
-                    {props.description} 
-                    <BrowserRouter>
-                        <Link 
-                            to={"/moreComments"}
-                            style={{textDecoration: "none"}}
-                            className={classes.expandDescription}
-                        >
-                            more
-                        </Link>
-                    </BrowserRouter>
+                    <PostDescription description={props.description}/>
                 </Typography>
                 {comments.map(comment => 
                     <Comment text={comment.text}/>    

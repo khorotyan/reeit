@@ -1,0 +1,9 @@
+.more {
+    padding-left: 4px;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.more:active {
+    padding-left: 4px;
+    color: rgba(0, 0, 0, 0.28);
+}
