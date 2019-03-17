@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import Comment from './Comment/Comment';
+import Username from '../../Shared/Username/Username';
+import PostLike from './Like/PostLike';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -89,7 +91,7 @@ const post = props => {
                         <MoreVertIcon/>
                     </IconButton>
                 }
-                title="Test User"
+                title={<Username name="jacob"/>}
                 subheader="March 14, 2019"
             >
             </CardHeader>
@@ -110,7 +112,7 @@ const post = props => {
             </CardActions>
             <CardContent style={{paddingTop: 0}}>
                 <Typography style={{paddingBottom: 6}} component="p">
-                    Liked by <strong>James Brown</strong> and <strong>11,650 others</strong>
+                    <PostLike postId="13492" username="hasselblad" likes="16450"/>
                 </Typography>   
                 <Typography style={{paddingBottom: 12}} component="p">
                     {props.description} 
