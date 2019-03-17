@@ -9,10 +9,21 @@ const home = props => {
 
     return (
         <div className={classes.postsContainer}>
-            <Post description={description}/>
-            <Post/>
-            <Post/>
-            <Post/>
+            <Post  
+                username="jacob"
+                date="March 14, 2019"
+                description={description}
+            />
+            <Post  
+                username="jacob"
+                date="March 14, 2019"
+                description={description}
+            />
+            <Post  
+                username="jacob"
+                date="March 14, 2019"
+                description={description}
+            />
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import Mention from '../components/Pages/PostView/Post/Mention/Mention';
 
-const findMention = (label, value) => {
+const findMention = (label) => {
 
     const reg = new RegExp(/([@][\w_-]+)/g); // space before @ regex - /\s([@][\w_-]+)/g
 

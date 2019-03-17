@@ -21,7 +21,7 @@ const comment = props => {
             <div className={classes.commentTextRoot}>
                 <Typography style={{paddingBottom: 8, whiteSpace: 'pre-line'}} component="p">
                     <Username name="zyuser "/>
-                    {findMention(props.text, "@gg")}
+                    {findMention(props.text)}
                 </Typography>
             </div>
             <div className={classes.likeRoot}>

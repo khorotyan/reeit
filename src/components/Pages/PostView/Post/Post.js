@@ -83,7 +83,7 @@ const post = props => {
             <CardHeader
                 avatar={
                     <Avatar style={{backgroundColor: AVATAR_BACKGROUND_COLOR}}>
-                        VK
+                        JA
                     </Avatar>
                 }
                 action={
@@ -91,8 +91,8 @@ const post = props => {
                         <MoreVertIcon/>
                     </IconButton>
                 }
-                title={<Username name="jacob"/>}
-                subheader="March 14, 2019"
+                title={<Username name={props.username}/>}
+                subheader={props.date}
             >
             </CardHeader>
             <CardMedia
