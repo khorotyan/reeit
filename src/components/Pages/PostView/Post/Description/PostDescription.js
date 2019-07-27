@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import classes from './PostDescription.module.css';
 import { Link, BrowserRouter } from 'react-router-dom';
 import { findMentions } from '../../../../../util/mentionFinder';
@@ -33,22 +33,16 @@ const postDescription = props => {
         return shortDescription;
     };
 
-    const showMore = () => {
-        if (props.description.length <= MAX_DESCRIPTION_LENGTH || moreClicked){
-            return false;
-        }
+    const showMore = !(props.description.length <= MAX_DESCRIPTION_LENGTH || moreClicked);
 
-        return true;
-    }
-
-    const handleMoreClick = () => {
+    const handleMoreClick = useCallback(() => {
         setMoreClicked(true);
-    }
+    });
 
     return (
         <React.Fragment>
             {findMentions(getDescription())}
-            { showMore() ? 
+            { showMore ? 
             <BrowserRouter>
                 <Link 
                     onClick={handleMoreClick}

@@ -13,7 +13,7 @@ const comment = props => {
     const [liked, setLike] = useState(false);
 
     const handleLike = () => {
-        setLike(!liked);
+        setLike(liked => !liked);
     };
 
     return (
@@ -26,7 +26,10 @@ const comment = props => {
             </div>
             <div className={classes.likeRoot}>
                 <IconButton onClick={handleLike} className={classes.favoriteIconButton}>
-                    {liked ? <FavoriteFilledIcon style={{color: LIKE_FILLED_COLOR, width: 18, height: 18}}/> : <FavoriteIcon style={{width: 18, height: 18}}/>}
+                    {liked 
+                        ? <FavoriteFilledIcon style={{color: LIKE_FILLED_COLOR, width: 18, height: 18}}/> 
+                        : <FavoriteIcon style={{width: 18, height: 18}}/>
+                    }
                 </IconButton>
             </div>
         </div>
