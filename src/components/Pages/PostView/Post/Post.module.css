@@ -1,0 +1,27 @@
+.card {
+    margin-top: 12px;
+    width: 500px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        margin-top: 12px;
+        width: 100%;
+    }
+} 
+
+.media {
+    height: 500px;
+}
+
+.commentInput {
+    width: 100%;
+}
+
+.moreComments {
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.moreComments:active {
+    color: rgba(0, 0, 0, 0.28);
+}

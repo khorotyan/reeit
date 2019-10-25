@@ -1,0 +1,34 @@
+.logoRoot {
+    left: 20%;
+    flex: 2.5;
+    position: relative;
+}
+
+.searchRoot {
+    position: relative;
+    width: 22%;
+}
+
+.inputRoot {
+    padding-left: 6px; 
+    width: 82%;
+}
+
+.inputInput {
+    width: 99%;
+}
+
+.searchButton {
+    left: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.grow {
+    flex: 2.1;
+}
+
+.sectionPageIcons {
+    position: relative;
+    right: 20%;
+}
